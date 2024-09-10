@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { bodyHasYoutube, youtubeEmbed } from '$lib';
 	import Comments from '$lib/Comments.svelte';
 	import type { PageData } from './$types';
 
@@ -15,7 +16,9 @@
 	<a href="/">go back</a>
 	<h1>{issue.title}</h1>
 	<section>
-		{@html issue.bodyHTML}
+		{@html youtubeEmbed(issue.bodyHTML)}
+
+		<!-- {@html youtubeEmbed(issue.bodyHTML)} -->
 	</section>
 </article>
 <div>
@@ -29,7 +32,7 @@
 </p>
 
 <style lang="postcss">
-	:global(section img) {
+	:global(section img, section iframe, section video) {
 		@apply mx-auto my-2 rounded-md bg-white p-1;
 	}
 </style>
