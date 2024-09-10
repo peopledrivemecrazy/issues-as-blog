@@ -1,0 +1,15 @@
+name: Issue Closed
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  call_webhook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Webhook
+        env:
+          WEBHOOK_URL: ${{ vars.WEBHOOK_URL }}
+        run: |
+          curl '$WEBHOOK_URL'
