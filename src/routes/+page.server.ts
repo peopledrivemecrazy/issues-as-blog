@@ -23,3 +23,5 @@ export const load = (async () => {
 		issues: issues.repository.issues
 	};
 }) satisfies PageServerLoad;
+
+export const prerender = true;

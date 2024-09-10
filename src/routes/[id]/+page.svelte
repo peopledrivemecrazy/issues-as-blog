@@ -27,3 +27,9 @@
 		to add comments go here
 	</a>
 </p>
+
+<style lang="postcss">
+	:global(section img) {
+		@apply mx-auto my-2 rounded-md bg-white p-1;
+	}
+</style>
