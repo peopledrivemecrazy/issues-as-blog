@@ -36,4 +36,4 @@ export const load = (async ({ params }) => {
 	return { id, issue };
 }) satisfies PageServerLoad;
 
-export const prerender = true;
+export const prerender = 'auto';

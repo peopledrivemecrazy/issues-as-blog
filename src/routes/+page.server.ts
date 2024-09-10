@@ -24,4 +24,4 @@ export const load = (async () => {
 	};
 }) satisfies PageServerLoad;
 
-export const prerender = true;
+export const prerender = 'auto';
