@@ -11,5 +11,4 @@ jobs:
       - name: Call Webhook
         env:
           WEBHOOK_URL: ${{ vars.WEBHOOK_URL }}
-        run: |
-          curl '${{ vars.WEBHOOK_URL }}'
+        run: echo ${{ vars.WEBHOOK_URL }}
