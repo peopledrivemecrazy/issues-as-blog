@@ -12,4 +12,4 @@ jobs:
         env:
           WEBHOOK_URL: ${{ vars.WEBHOOK_URL }}
         run: |
-          curl '$WEBHOOK_URL'
+          curl '${{ vars.WEBHOOK_URL }}'
