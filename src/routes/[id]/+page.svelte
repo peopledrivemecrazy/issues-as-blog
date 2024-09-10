@@ -17,8 +17,6 @@
 	<h1>{issue.title}</h1>
 	<section>
 		{@html youtubeEmbed(issue.bodyHTML)}
-
-		<!-- {@html youtubeEmbed(issue.bodyHTML)} -->
 	</section>
 </article>
 <div>
