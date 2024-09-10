@@ -5,31 +5,16 @@
 </script>
 
 {#each comments as comment}
-	<div class="flex">
+	<div class="flex flex-col items-center justify-between gap-2">
 		<p>{@html comment.node.bodyHTML}</p>
 	</div>
-	<div class="flex-end">
-		<img src={comment.node.author.avatarUrl} alt={comment.node.author.login} />
+	<div class="flex items-center justify-end gap-2">
+		<img
+			class="h-10 w-10 rounded-full"
+			src={comment.node.author.avatarUrl}
+			alt={comment.node.author.login}
+		/>
 		<pre>{comment.node.author.login}</pre>
 	</div>
-    <hr/>
+	<hr />
 {/each}
-
-<style>
-	img {
-		border-radius: 100%;
-		width: 25px;
-	}
-	.flex-end {
-        justify-content: end;
-		display: flex;
-		align-items: center;
-		gap: 1em;
-	}
-	.flex {
-		display: flex;
-		gap: 1em;
-		justify-content: space-between;
-		align-items: center;
-	}
-</style>

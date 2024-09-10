@@ -11,7 +11,7 @@
 	<title>{issue.title}</title>
 </svelte:head>
 
-<article>
+<article class="flex flex-col gap-4">
 	<a href="/">go back</a>
 	<h1>{issue.title}</h1>
 	<section>
@@ -27,12 +27,3 @@
 		to add comments go here
 	</a>
 </p>
-
-<style>
-	a {
-		color: #fff;
-	}
-	article {
-		padding: 4em;
-	}
-</style>

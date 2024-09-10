@@ -1,6 +1,5 @@
-<script lang="ts">
-	import '../app.pcss';
-	import type { LayoutData } from './$types';
+<script>
+	import '../app.css';
 </script>
 
 <main>
@@ -8,5 +7,4 @@
 </main>
 
 <style>
-	
 </style>
