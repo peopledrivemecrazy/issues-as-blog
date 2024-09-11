@@ -21,9 +21,3 @@
 		</p>
 	{/each}
 </ul>
-
-<style>
-	ul {
-		list-style: none;
-	}
-</style>
