@@ -9,3 +9,17 @@ body {
 h1 {
 	@apply text-5xl;
 }
+
+a {
+	@apply text-teal-200;
+	&:hover {
+		@apply text-teal-100;
+	}
+}
+
+article a {
+	@apply text-teal-200 underline decoration-teal-200 decoration-wavy underline-offset-4;
+	&:hover {
+		@apply text-teal-100 underline decoration-teal-100 underline-offset-4;
+	}
+}
