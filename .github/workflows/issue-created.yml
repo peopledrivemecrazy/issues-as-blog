@@ -1,9 +1,10 @@
-name: Issue Closed
+name: Issue Closed or Commented
 
 on:
   issues:
     types: [closed]
-
+  issue_comment:
+    types: [created]
 jobs:
   call_webhook:
     runs-on: ubuntu-latest
