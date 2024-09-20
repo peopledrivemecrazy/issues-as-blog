@@ -1,38 +1,19 @@
-# create-svelte
+# GitHub Issues Blog
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A minimalist blogging platform that leverages GitHub Issues as a backend.
 
-## Creating a project
+[Video Demo](https://youtu.be/UML33lIcEOc)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Key Features
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- Uses GitHub Issues as a content management system
+- No need to commit Markdown files to the repository
+- Closing an issue automatically publishes the content
+- Triggers a webhook to Vercel for automatic builds - Adjust vercel to stop triggering on push.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## How It Works
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+1. Create a new issue for each blog post
+2. Write your content in the issue body using Markdown
+3. Close the issue to publish the post
+4. Webhook notifies Vercel to rebuild and deploy the site
